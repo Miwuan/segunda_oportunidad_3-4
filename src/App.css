@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+
+	background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Cabecera Negra con titulo del programa */
+header {
+	background-color: rgb(47, 47, 49);
+	color: white;
+	height: 400px;
+	width: 100vw;
+
+	display: block;
+
+	text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cabecera {
+	margin: 0;
+	padding: 50px;
+	position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+	font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+h3 {
+	font-weight: 300;
+	padding: 10px;
+}
+
+/* Card */
+
+.Card {
+	background-color: white;
+	display: block;
+	min-height: 400px;
+	width: 600px;
+	position: relative;
+	margin: -170px auto;
+	box-shadow: 10px 10px 20px rgba(43, 41, 41, 0.376);
+}
+
+.Foto {
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	height: 120px;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+
+.Foto img {
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 10px #fff;
+	padding: 5px;
+	position: absolute;
+	top: 20%;
+	transform: translate(-50%, 10%);
+}
+
+/* Arrows */
+.Flechas {
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Button {
+	background-color: white;
+	border: none;
+	color: #ccc;
+	padding: 0.1rem 30px;
+	display: block;
+	font-size: 40px;
+	cursor: pointer;
+	transition: all 0.1s linear;
+}
+
+.Button:hover {
+	color: hsl(120, 90%, 44%);
+}
+
+/* Botones de abajo */
+
+.user-title {
+	font-size: 18px;
+	margin-bottom: 0;
+}
+
+.user-value {
+	color: black;
+	font-size: 28px;
+}
+
+.values-list {
+	padding-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	justify-content: center;
+}
+
+.icon {
+	background-color: transparent;
+	border: none;
+	font-size: 1.8rem;
+	color: gray;
+	transition: all 0.1s linear;
+}
+
+.icon:hover {
+	color: hsl(120, 90%, 44%);
 }
